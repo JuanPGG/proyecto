@@ -1,10 +1,13 @@
-import "./App.css";
+import { ThemeProvider } from 'styled-components';
+import { appTheme } from './components/theme/app-theme';
+import { GlobalStyles } from './components/theme/global-styles';
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={appTheme}>
+      <GlobalStyles />
       <h1>Hola Mundo</h1>
-    </div>
+    </ThemeProvider>
   );
 }
 
