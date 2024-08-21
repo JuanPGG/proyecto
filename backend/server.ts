@@ -1,8 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import { getHorarios } from './src/queries/horario/getHorarios';
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 app.get('/horario', async (_, res) => {
   try {
