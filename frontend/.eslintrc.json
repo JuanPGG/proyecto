@@ -13,6 +13,6 @@
     // "no-console": "error"
   },
   "env": {
-    "jest": true
+    "vitest": true
   }
 }

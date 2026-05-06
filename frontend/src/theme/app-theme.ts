@@ -8,4 +8,4 @@ export const appTheme = {
     laptop: 1024,
     desktop: 1366,
   },
-};
+} as const;
