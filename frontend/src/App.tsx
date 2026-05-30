@@ -1,12 +1,13 @@
 import { ThemeProvider } from 'styled-components';
-import { appTheme, GlobalStyles } from './theme';
-import { Prueba } from './components/atoms/Prueba';
+import { appTheme } from './theme/app-theme';
+import { GlobalStyles } from './theme/global-styles';
+import { Login } from './components/Pages/Login';
 
 function App() {
   return (
     <ThemeProvider theme={appTheme}>
       <GlobalStyles />
-      <Prueba />
+      <Login />
     </ThemeProvider>
   );
 }
